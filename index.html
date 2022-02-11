@@ -1,0 +1,164 @@
+<html lang="en">
+  <head>
+    <title>Toolshop Software</title>
+  </head>
+  <style>
+    @font-face {
+      font-family: "Messer Condensed";
+      src: url("./fonts/Messer-Condensed.woff2") format("woff2"),
+        url("./fonts/Messer-Condensed.woff") format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Messer Condensed";
+      src: url("./fonts/Messer-CondensedItalic.woff2") format("woff2"),
+        url("./fonts/Messer-CondensedItalic.woff") format("woff");
+      font-weight: normal;
+      font-style: italic;
+    }
+    :root,
+    html {
+      font-size: 16px;
+    }
+    body {
+      background-color: #fffcfa;
+      font-family: "Archivo", sans-serif;
+      font-family: "Messer Condensed", serif;
+      font-size: 1rem;
+      margin: 0;
+      padding: 1rem;
+      line-height: 2.5em;
+    }
+    .logo {
+      height: 5rem;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+    .logo-inline {
+      height: 4.6rem;
+      //margin-bottom: -14px;
+    }
+    a,
+    a:visited {
+      color: inherit;
+    }
+    h1,
+    h2,
+    h3,
+    p {
+      font-family: "Messer Condensed", serif;
+      margin: 0;
+    }
+    h1 {
+      opacity: 0;
+      display: block;
+      height: 1rem;
+    }
+    h2 {
+      font-size: 5rem;
+    }
+    h3 {
+      font-size: 2rem;
+      font-style: italic;
+    }
+    p {
+      font-size: 2rem;
+    }
+    p {
+      max-width: 70ch;
+    }
+    p:last-child {
+      margin-bottom: 66vh;
+    }
+    p + h3,
+    p + h2 {
+      margin-top: 14rem;
+    }
+    h2 {
+      margin-bottom: 8rem;
+    }
+    h3 {
+      margin-bottom: 1rem;
+    }
+    .glsl-canvas {
+      width: 66vw;
+      height: 75vh;
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
+      z-index: -1;
+    }
+  </style>
+  <script
+    type="text/javascript"
+    defer
+    src="https://unpkg.com/glsl-canvas-js/dist/umd/glsl-canvas.min.js"
+  ></script>
+  <body>
+    <main>
+      <canvas
+        class="glsl-canvas"
+        data-fragment-url="fragment.glsl"
+        width="500"
+        height="500"
+      ></canvas>
+      <h1>Toolshop</h1>
+      <p>
+        <img class="logo-inline" src="logo.svg" alt="Toolshop" /> is a software
+        imagineering studio and my independent practice. I help technology
+        companies prototype and incubate new ideas for computing &mdash;
+        focusing on novel human-computer interaction, graphics, and creative
+        tooling.
+      </p>
+
+      <h3>Prototyping is Design</h3>
+      <p>
+        My career started off in Industrial Design, where I learned how valuable
+        making prototypes was to the product development process. Making
+        functional models we could test with people gave everyone hands-on
+        insight into an idea's strengths and weaknesses, far more than a sketch
+        or 3d model could. I've carried this way of working from the hardware
+        world to software, and it's now my favorite way to help my
+        collaborators. In several instances, the prototypes I built became the
+        foundation of the public release.
+      </p>
+
+      <h3>Constant Learning</h3>
+      <p>
+        In 2020, I felt lost. I was a successful Product Designer/Product
+        Manager hybrid, yet I was more disillusioned than ever. I spent a year
+        with a therapist rediscovering my values. My top value was "love of
+        learning", but I was rarely satisfying that day-to-day. I had to make a
+        big change, so I quit my job and started this practice, focusing on
+        programming as my medium, rather than documents and mockups. 2 years
+        later, I approach each collaboration with a beginner's mindset, diving
+        deep into creative and technical research to learn for both my and my
+        clients' sakes. The artifacts I create show what's possible while
+        expanding their imagination.
+      </p>
+
+      <h3>Creative Subversion</h3>
+      <p>
+        As a former contributor to Big Tech, I'm intimately familiar with how
+        technological optimism can be used to exploit, and how capital can
+        distort and change what the entire industry thinks are critical
+        problems. That's why I prioritize collaborators that work on
+        under-researched problems and create tools for people to understand and
+        control their use of technology.
+      </p>
+
+      <h3>Collaborations</h3>
+      <p>
+        Reach out to julius at tarng dot com to discuss a project! I always
+        start with a short trial to test out how we work together. Pricing
+        ranges from $200-$300 depending on funding and stage of company.
+      </p>
+
+      <h3>
+        &mdash; <a href="https://tarng.com">Julius Tarng</a>, Founder, February
+        2022
+      </h3>
+    </main>
+  </body>
+</html>
