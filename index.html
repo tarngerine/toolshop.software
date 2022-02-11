@@ -88,6 +88,11 @@
       right: 2rem;
       top: 2rem;
       z-index: -1;
+      opacity: 0;
+      transition: opacity 5s ease-in;
+    }
+    .glsl-canvas.visible {
+      opacity: 1;
     }
   </style>
   <script
@@ -95,6 +100,9 @@
     defer
     src="https://unpkg.com/glsl-canvas-js/dist/umd/glsl-canvas.min.js"
   ></script>
+  <script type="text/javascript">
+  setTimeout(() => {document.querySelector(".glsl-canvas").classList.add("visible")}, 500);
+  </script>
   <body>
     <main>
       <canvas
