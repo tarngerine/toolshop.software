@@ -1,6 +1,15 @@
 <html lang="en">
   <head>
-    <title>Toolshop Software</title>
+    <title>Toolshop</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Toolshop • Software Imagineering" />
+    <meta
+      property="og:description"
+      content="A software imagineering studio that helps technology companies prototype and incubate new ideas for computing &mdash; focusing on novel human-computer interaction, graphics, and creative tooling."
+    />
+    <meta property="og:url" content="https://toolshop.software" />
+    <meta property="og:image" content="thumbnail.png" />
   </head>
   <style>
     @font-face {
@@ -101,7 +110,9 @@
     src="https://unpkg.com/glsl-canvas-js/dist/umd/glsl-canvas.min.js"
   ></script>
   <script type="text/javascript">
-  setTimeout(() => {document.querySelector(".glsl-canvas").classList.add("visible")}, 500);
+    setTimeout(() => {
+      document.querySelector(".glsl-canvas").classList.add("visible");
+    }, 500);
   </script>
   <body>
     <main>
